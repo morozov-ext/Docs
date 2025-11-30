@@ -42,7 +42,7 @@ The directory `/var/www/testapp` contains the welcome page files:
 `snapd`, `systemd-journald`, `systemd-logind`, `systemd-networkd`,  
 `systemd-resolved`, `systemd-timesyncd`, `systemd-udevd`, `unattended-upgrades`.
 
-## *Component Interactions**
+## **Component Interactions**
 - **nginx** receives HTTP requests and returns static files / forwards dynamic requests to **php-fpm**.  
 - **php-fpm** executes PHP scripts and connects to **MariaDB** (`127.0.0.1:3306`) and the **Memcached** cache (`127.0.0.1:11211`) when needed.  
 - **Postfix** sends local system notifications.  
