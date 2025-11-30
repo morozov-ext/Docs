@@ -3,9 +3,9 @@
 ## **Описание**
 Сервер с веб-окружением на основе **LEMP-стека** и базовым набором сервисов. Обрабатывает HTTP-запросы через **nginx** и исполняет PHP-скрипты через **php-fpm**. В качестве реляционной базы данных используется **MariaDB**.
 
-В каталоге **/var/www/testapp** размещены файлы приветственной страницы:
-- **index.html**
-- **Два PNG-изображения**
+В каталоге `/var/www/testapp` размещены файлы приветственной страницы:
+- index.html
+- Два PNG-изображения
 
 ## **Назначение**
 - Тестовый стенд, «песочница» для кандидатов для знакомства с веб-окружением.
@@ -28,19 +28,19 @@
 
 | **Активный сервис** | **Роль** |
 |----------------------|----------|
-| **nginx**            | Веб-сервер, обработка HTTP-запросов |
-| **php-fpm**          | Исполнение PHP-кода |
-| **MariaDB**          | Реляционная СУБД |
-| **Memcached**        | Кэширование данных |
-| **Fail2Ban**         | Защита от брутфорс-атак |
-| **Postfix**          | Агент локальной доставки почты (MTA) |
-| **sshd**             | Удаленный доступ по SSH |
+| nginx            | Веб-сервер, обработка HTTP-запросов |
+| php-fpm          | Исполнение PHP-кода |
+| MariaDB          | Реляционная СУБД |
+| Memcached       | Кэширование данных |
+| Fail2Ban         | Защита от брутфорс-атак |
+| Postfix          | Агент локальной доставки почты (MTA) |
+| sshd             | Удаленный доступ по SSH |
 
 ### **Системные службы**
-**cron**, **dbus**, **irqbalance**, **multipathd**, **networkd-dispatcher**,  
-**getty@tty1**, **serial-getty@ttyS0**, **packagekit**, **polkit**, **rsyslog**,  
-**snapd**, **systemd-journald**, **systemd-logind**, **systemd-networkd**,  
-**systemd-resolved**, **systemd-timesyncd**, **systemd-udevd**, **unattended-upgrades**.
+`cron`, `dbus`, `irqbalance`, `multipathd`, `networkd-dispatcher`,  
+`getty@tty1`, `serial-getty@ttyS0`, `packagekit`, `polkit`, `rsyslog`,  
+`snapd`, `systemd-journald`, `systemd-logind`, `systemd-networkd`,  
+`systemd-resolved`, `systemd-timesyncd`, `systemd-udevd`, `unattended-upgrades`.
 
 ## **Логические связи**
 - **nginx** принимает HTTP-запросы и отдаёт статические файлы / перенаправляет динамические запросы в **php-fpm**.  
