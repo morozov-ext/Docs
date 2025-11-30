@@ -4,11 +4,11 @@
 The server provides a web environment based on the LEMP stack with a basic set of services. It processes HTTP requests through **nginx** and executes PHP scripts via **php-fpm**. **MariaDB** is used as the relational database.
 
 The directory `/var/www/testapp` contains the welcome page files:
-- **index.html**
-- **Two PNG images**
+- `index.html`.
+- Two PNG images.
 
 ## **Usage scenarios**
-- A test environment (“sandbox”) for candidates to explore the web stack.
+- A test environment (sandbox) for candidates to explore the web stack.
 - Displaying a welcome page on server access.
 
 ## **Requirements**
