@@ -30,10 +30,10 @@ The directory `/var/www/testapp` contains the welcome page files:
 |-------------|----------|
 | nginx            | Web server, HTTP request processing |
 | php-fpm          | PHP code execution |
-| MariaDB          | Relational DBMS |
-| Memcached        | Data caching |
-| Fail2Ban         | Brute-force attack protection |
-| Postfix          | Local mail delivery agent (MTA) |
+| MariaDB          | Relational database |
+| Memcached        | Memory-caching system |
+| Fail2Ban         | Brute-force protection |
+| Postfix          | Local mail delivery agent (MDA) |
 | sshd             | Remote SSH access |
 
 ### **System Services**
