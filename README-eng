@@ -46,7 +46,7 @@ The directory `/var/www/testapp` contains the welcome page files:
 - **nginx** receives HTTP requests and returns static files / forwards dynamic requests to **php-fpm**.  
 - **php-fpm** executes PHP scripts and connects to **MariaDB** (`127.0.0.1:3306`) and the **Memcached** cache (`127.0.0.1:11211`) when needed.  
 - **Postfix** sends local system notifications.  
-- **Fail2Ban** analyzes logs and blocks suspicious ssh connection attempts.
+- **Fail2Ban** analyzes logs and blocks suspicious SSH connection attempts.
 
 ## **Open Ports**
 
