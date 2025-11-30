@@ -36,7 +36,7 @@
 | Postfix          | Агент локальной доставки почты (MTA) |
 | sshd             | Удаленный доступ по SSH |
 
-### **Системные службы**
+### **Системные**
 `cron`, `dbus`, `irqbalance`, `multipathd`, `networkd-dispatcher`,  
 `getty@tty1`, `serial-getty@ttyS0`, `packagekit`, `polkit`, `rsyslog`,  
 `snapd`, `systemd-journald`, `systemd-logind`, `systemd-networkd`,  
