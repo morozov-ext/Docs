@@ -13,16 +13,14 @@
 
 ## **Требования к окружению**
 
-Ubuntu >= 22.04  
-nginx >= 1.18.0  
-PHP >= 8.1  
-MariaDB >= 10.6.22  
-Memcached >= 1.6.14  
-Fail2Ban >= 0.11.2
+- Ubuntu >= 22.04  
+- nginx >= 1.18.0  
+- PHP >= 8.1  
+- MariaDB >= 10.6.22  
+- Memcached >= 1.6.14  
+- Fail2Ban >= 0.11.2
 
-## **Сервисы**
-
-### **Основные**
+## **Основные сервисы**
 
 | **Активный сервис** | **Роль** |
 |----------------------|----------|
@@ -33,12 +31,6 @@ Fail2Ban >= 0.11.2
 | Fail2Ban         | Защита от брутфорс-атак |
 | Postfix          | Агент локальной доставки почты (MTA) |
 | sshd             | Удаленный доступ по SSH |
-
-### **Системные**
-`cron`, `dbus`, `irqbalance`, `multipathd`, `networkd-dispatcher`,  
-`getty@tty1`, `serial-getty@ttyS0`, `packagekit`, `polkit`, `rsyslog`,  
-`snapd`, `systemd-journald`, `systemd-logind`, `systemd-networkd`,  
-`systemd-resolved`, `systemd-timesyncd`, `systemd-udevd`, `unattended-upgrades`.
 
 ## **Логические связи**
 - **nginx** принимает HTTP-запросы и отдаёт статические файлы / перенаправляет динамические запросы в **php-fpm**.  
