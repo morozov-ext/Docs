@@ -1,4 +1,4 @@
-# **weaselcloud-26445 Server**
+# **Weaselcloud-26445 Server**
 
 ## **Overview**
 The server provides a web environment based on the LEMP stack with a basic set of services. It handles HTTP requests through **nginx** and executes PHP scripts via **PHP-FPM**. **MariaDB** is used as the relational database.
