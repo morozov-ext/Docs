@@ -13,18 +13,16 @@ The directory `/var/www/testapp` contains the welcome page files:
 
 ## **Requirements**
 
-Ubuntu >= 22.04  
-nginx >= 1.18.0  
-PHP >= 8.1  
-MariaDB >= 10.6.22  
-Memcached >= 1.6.14  
-Fail2Ban >= 0.11.2
+- Ubuntu >= 22.04.  
+- nginx >= 1.18.0.  
+- PHP >= 8.1.  
+- MariaDB >= 10.6.22.  
+- Memcached >= 1.6.14.  
+- Fail2Ban >= 0.11.2.
 
-## **Services**
+## **Primary Services**
 
-### **Primary Services**
-
-| **Service** | **Role** |
+| **Active Service** | **Role** |
 |-------------|----------|
 | nginx            | Web server, HTTP request processing |
 | php-fpm          | PHP code execution |
@@ -34,13 +32,7 @@ Fail2Ban >= 0.11.2
 | Postfix          | Local mail delivery agent (MDA) |
 | sshd             | Remote SSH access |
 
-### **System Services**
-`cron`, `dbus`, `irqbalance`, `multipathd`, `networkd-dispatcher`,  
-`getty@tty1`, `serial-getty@ttyS0`, `packagekit`, `polkit`, `rsyslog`,  
-`snapd`, `systemd-journald`, `systemd-logind`, `systemd-networkd`,  
-`systemd-resolved`, `systemd-timesyncd`, `systemd-udevd`, `unattended-upgrades`.
-
-## **Component Interactions**
+## **Components Interactions**
 - **nginx** receives HTTP requests and returns static files / forwards dynamic requests to **php-fpm**.  
 - **php-fpm** executes PHP scripts and connects to **MariaDB** (`127.0.0.1:3306`) and the **Memcached** cache (`127.0.0.1:11211`) when needed.  
 - **Postfix** sends local system notifications.  
