@@ -13,14 +13,12 @@ The directory `/var/www/testapp` contains the welcome page files:
 
 ## **Requirements**
 
-| **Component** | **Minimum Version** |
-|---------------|----------------------|
-| Ubuntu        | 22.04               |
-| nginx         | 1.18.0              |
-| PHP           | 8.1                 |
-| MariaDB       | 10.6.22             |
-| Memcached     | 1.6.14              |
-| Fail2Ban      | 0.11.2              |
+Ubuntu >= 22.04  
+nginx >= 1.18.0  
+PHP >= 8.1  
+MariaDB >= 10.6.22  
+Memcached >= 1.6.14  
+Fail2Ban >= 0.11.2
 
 ## **Services**
 
