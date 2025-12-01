@@ -1,7 +1,7 @@
 # **Server weaselcloud-26445**
 
 ## **Overview**
-The server provides a web environment based on the LEMP stack with a basic set of services. It processes HTTP requests through **nginx** and executes PHP scripts via **php-fpm**. **MariaDB** is used as the relational database.
+The server provides a web environment based on the LEMP stack with a basic set of services. It handles HTTP requests through **nginx** and executes PHP scripts via **php-fpm**. **MariaDB** is used as the relational database.
 
 The directory `/var/www/testapp` contains the welcome page files:
 - `index.html`.
@@ -32,7 +32,7 @@ The directory `/var/www/testapp` contains the welcome page files:
 | Postfix          | Local mail delivery agent (MDA) |
 | sshd             | Remote SSH access |
 
-## **Components Interactions**
+## **Component Interactions**
 - **nginx** receives HTTP requests and returns static files / forwards dynamic requests to **php-fpm**.  
 - **php-fpm** executes PHP scripts and connects to **MariaDB** (`127.0.0.1:3306`) and the **Memcached** cache (`127.0.0.1:11211`) when needed.  
 - **Postfix** sends local system notifications.  
