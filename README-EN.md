@@ -9,7 +9,7 @@ The directory `/var/www/testapp` contains the welcome page files:
 
 ## **Usage scenarios**
 - As a test environment (sandbox) for candidates to explore the web stack.
-- Displaying a welcome page on server access.
+- For displaying a welcome page on server access.
 
 ## **Requirements**
 
